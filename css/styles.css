@@ -1,0 +1,173 @@
+/* 
+Основные цвета: 
+Цвет акцент  #2196F3
+Цвет основного текста  #757575
+Вторичный цвет текста  #212121
+Дополнительный цвет текста  #FFFFFF
+Цвет фона  #FFFFFF 
+Вторичный цвет фона  #F5F4FA
+Цвет акцент фона  #2F303A
+*/
+
+/* Переменные */
+:root {
+  --accent-color: #2196f3;
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --secondary-text-color: #ffffff;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --accent-background-color: #2f303a;
+  --logo-color: #000000;
+  --logo-color-footer: #ffffff;
+}
+
+body {
+  color: var(--main-text-color);
+  background-color: var(--primary-background-color);
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Header */
+.logo {
+  color: var(--logo-color);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  text-decoration: none;
+}
+
+.logo > span {
+  color: var(--accent-color);
+}
+
+/* Navigation */
+.site-nav .link {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Contacts */
+.contacts-link {
+  color: var(--main-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+.hero-title {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-background-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-decoration: none;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* Our benefits */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  text-align: center;
+}
+
+.section-title.benefit {
+  color: var(--title-text-color);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+/* Our team */
+.member {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.specialization {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/* Footer */
+.logo.second {
+  color: var(--logo-color-footer);
+  background-color: var(--accent-background-color);
+}
+
+.contacts {
+  background-color: var(--accent-background-color);
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.location {
+  color: var(--secondary-text-color);
+}
+
+.lower-contact {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.lower-contact:hover,
+.lower-contact:focus {
+  color: var(--accent-color);
+}
