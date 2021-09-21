@@ -60,6 +60,7 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   text-decoration: none;
 }
 
@@ -76,6 +77,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   text-decoration: none;
 }
 
@@ -85,9 +87,11 @@ body {
 }
 
 /* Hero */
+.hero {
+  background-color: var(--accent-background-color);
+}
 .hero-title {
   color: var(--secondary-text-color);
-  background-color: var(--accent-background-color);
 
   font-weight: 900;
   font-size: 44px;
@@ -101,6 +105,7 @@ body {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -117,7 +122,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
   text-align: center;
 }
 
@@ -127,33 +131,36 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: left;
 }
 
 /* Our team */
+.team {
+  background-color: var(--secondary-background-color);
+}
 .member {
   color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .specialization {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 /* Footer */
+.bottom-contacts {
+  background-color: var(--accent-background-color);
+}
 .logo.second {
   color: var(--logo-color-footer);
   background-color: var(--accent-background-color);
 }
 
 .contacts {
-  background-color: var(--accent-background-color);
   font-style: normal;
   line-height: 1.71;
 }
@@ -164,6 +171,7 @@ body {
 
 .lower-contact {
   color: rgba(255, 255, 255, 0.6);
+
   text-decoration: none;
 }
 
