@@ -9,7 +9,7 @@
 Цвет акцент фона  #2F303A
 */
 
-/* Переменные */
+/* Variables */
 :root {
   --accent-color: #2196f3;
   --main-text-color: #757575;
@@ -69,6 +69,10 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /* Contacts */
 .contacts-link {
   color: var(--main-text-color);
@@ -85,6 +89,8 @@ body {
 .contacts-link:focus {
   color: var(--accent-color);
 }
+
+/* Main page */
 
 /* Hero */
 .hero {
@@ -109,7 +115,9 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  text-decoration: none;
+  letter-spacing: 0.06em;
+
+  align-items: center;
 }
 
 .pointer {
@@ -178,4 +186,47 @@ body {
 .lower-contact:hover,
 .lower-contact:focus {
   color: var(--accent-color);
+}
+
+/* Portfolio page */
+
+/* Filter */
+.filter-button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+
+  text-align: center;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--secondary-text-color);
+  background-color: var(--accent-color);
+}
+
+/* Gallery */
+.card-link {
+  text-decoration: none;
+}
+
+.card-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-text {
+  color: var(--main-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
 }
