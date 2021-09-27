@@ -35,6 +35,20 @@ body {
 
 .list {
   list-style: none;
+
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Header */
@@ -51,6 +65,12 @@ body {
 
 .logo > span {
   color: var(--accent-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
 }
 
 /* Navigation */
@@ -95,6 +115,7 @@ body {
 /* Hero */
 .hero {
   background-color: var(--accent-background-color);
+  text-align: center;
 }
 .hero-title {
   color: var(--secondary-text-color);
@@ -102,22 +123,39 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
-.hero-button {
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  text-align: center;
+
+  border-radius: 4px;
+  padding: 6px 22px;
+}
+
+.button.hero {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 
-  font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
 
-  align-items: center;
+  padding: 10px 32px;
+  min-width: 200px;
 }
 
 .pointer {
@@ -131,6 +169,8 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 .section-title.benefit {
@@ -140,6 +180,8 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   text-align: left;
+
+  margin-bottom: 10px;
 }
 
 /* Our team */
@@ -164,8 +206,11 @@ body {
   background-color: var(--accent-background-color);
 }
 .logo.second {
+  display: inline-block;
   color: var(--logo-color-footer);
   background-color: var(--accent-background-color);
+
+  margin-bottom: 20px;
 }
 
 .contacts {
@@ -175,6 +220,8 @@ body {
 
 .location {
   color: var(--secondary-text-color);
+
+  margin-bottom: 9px;
 }
 
 .lower-contact {
@@ -204,8 +251,8 @@ body {
   text-align: center;
 }
 
-.filter-button:hover,
-.filter-button:focus {
+.filter.button:hover,
+.filter.button:focus {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
 }
@@ -222,6 +269,8 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .card-text {
