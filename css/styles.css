@@ -1,15 +1,6 @@
-/* 
-Основные цвета: 
-Цвет акцент  #2196F3
-Цвет основного текста  #757575
-Вторичный цвет текста  #212121
-Дополнительный цвет текста  #FFFFFF
-Цвет фона  #FFFFFF 
-Вторичный цвет фона  #F5F4FA
-Цвет акцент фона  #2F303A
-*/
+/* ===== MAIN PAGE ===== */
 
-/* Variables */
+/* ===== Variables ===== */
 :root {
   --accent-color: #2196f3;
   --main-text-color: #757575;
@@ -21,6 +12,8 @@
   --logo-color: #000000;
   --logo-color-footer: #ffffff;
 }
+
+/* =====Components===== */
 
 body {
   color: var(--main-text-color);
@@ -51,7 +44,49 @@ p {
   margin-bottom: 0;
 }
 
-/* Header */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+}
+
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: inherit;
+  text-align: center;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.contacts {
+  font-style: normal;
+  line-height: 1.71;
+}
+
+/* =====End Components===== */
+
+/* ===== Header ===== */
+
 .logo {
   color: var(--logo-color);
 
@@ -67,13 +102,8 @@ p {
   color: var(--accent-color);
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-}
+/* ===== Navigation ===== */
 
-/* Navigation */
 .site-nav .link {
   color: var(--title-text-color);
 
@@ -93,7 +123,8 @@ p {
   color: var(--accent-color);
 }
 
-/* Contacts */
+/* ===== Contacts ===== */
+
 .contacts-link {
   color: var(--main-text-color);
 
@@ -110,9 +141,10 @@ p {
   color: var(--accent-color);
 }
 
-/* Main page */
+/* ===== End Header ===== */
 
-/* Hero */
+/* ===== Hero ===== */
+
 .hero {
   background-color: var(--accent-background-color);
   text-align: center;
@@ -127,23 +159,6 @@ p {
   text-transform: uppercase;
 
   margin-bottom: 30px;
-}
-
-.button {
-  display: inline-block;
-  border: 1px solid transparent;
-  color: var(--title-text-color);
-  background-color: var(--secondary-background-color);
-
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: inherit;
-  text-align: center;
-
-  border-radius: 4px;
-  padding: 6px 22px;
 }
 
 .button.hero {
@@ -162,16 +177,9 @@ p {
   cursor: pointer;
 }
 
-/* Our benefits */
-.section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
+/* ===== End Hero ===== */
 
-  margin-bottom: 50px;
-}
+/* ===== Our benefits ===== */
 
 .section-title.benefit {
   color: var(--title-text-color);
@@ -184,7 +192,10 @@ p {
   margin-bottom: 10px;
 }
 
-/* Our team */
+/* ===== End Our benefits ===== */
+
+/* ===== Our team ===== */
+
 .team {
   background-color: var(--secondary-background-color);
 }
@@ -201,7 +212,9 @@ p {
   line-height: 1.19;
 }
 
-/* Footer */
+/* ===== End Our team ===== */
+
+/* ===== Footer ===== */
 .bottom-contacts {
   background-color: var(--accent-background-color);
 }
@@ -211,11 +224,6 @@ p {
   background-color: var(--accent-background-color);
 
   margin-bottom: 20px;
-}
-
-.contacts {
-  font-style: normal;
-  line-height: 1.71;
 }
 
 .location {
@@ -234,10 +242,11 @@ p {
 .lower-contact:focus {
   color: var(--accent-color);
 }
+/* ===== End Footer ===== */
 
-/* Portfolio page */
+/* ===== PORTFOLIO PAGE ===== */
 
-/* Filter */
+/* ===== Filter ===== */
 .filter-button {
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
@@ -257,7 +266,9 @@ p {
   background-color: var(--accent-color);
 }
 
-/* Gallery */
+/* ===== End Filter ===== */
+
+/* ===== Gallery ===== */
 .card-link {
   text-decoration: none;
 }
@@ -279,3 +290,5 @@ p {
   font-size: 16px;
   line-height: 1.87;
 }
+
+/* ===== End Gallery ===== */
